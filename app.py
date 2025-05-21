@@ -72,6 +72,7 @@ def get_travel_time():
     grand_total_time_ms = (bus_to_src_time or 0) + total_time
     grand_total_time_min = round(grand_total_time_ms / 1000 )
 
+    return "Model is running."
     return jsonify({
         "total_time_seconds": grand_total_time_min
     })
